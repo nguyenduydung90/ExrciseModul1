@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryMoveFromArray(arr, x) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+            if (x === arr[i]) {
+                arr.splice(i, 1)
+            }
+        }
+        return arr;
+    }
+
+    let arr1 = [2, 5, 3, 6, 8, 8, 9, 12, 5];
+    let temp = tryMoveFromArray(arr1, 8);
+    document.write(temp);
+
+</script>
+</body>
+</html>
